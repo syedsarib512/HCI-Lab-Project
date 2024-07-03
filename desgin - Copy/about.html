@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title data-translate="title">about us</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo" data-translate="header.logo">Educa.</a>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-translate="header.search_placeholder">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+      <div class="profile">
+         <img src="images/dp.jpg" class="image" alt="">
+         <h3 class="name" data-translate="profile.name">Syed Sarib</h3>
+         <p class="role" data-translate="profile.role">student</p>
+         <a href="profile.html" class="btn" data-translate="profile.view_profile">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn" data-translate="profile.login">login</a>
+            <a href="register.html" class="option-btn" data-translate="profile.register">register</a>
+         </div>
+      </div>
+   </section>
+   <section class="language-switch">
+      <button id="language-en" class="lang-btn">EN</button>
+      <button id="language-ur" class="lang-btn">UR</button>
+   </section>
+</header> 
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <div class="profile">
+      <img src="images/dp.jpg" class="image" alt="">
+      <h3 class="name" data-translate="profile.name">Syed Sarib</h3>
+      <p class="role" data-translate="profile.role">student</p>
+      <a href="profile.html" class="btn" data-translate="profile.view_profile">view profile</a>
+   </div>
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span data-translate="navbar.home">home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span data-translate="navbar.about">about</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span data-translate="navbar.courses">courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span data-translate="navbar.teachers">teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span data-translate="navbar.contact">contact us</span></a>
+   </nav>
+</div>
+<section class="about">
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img.svg" alt="">
+      </div>
+      <div class="content">
+         <h3 data-translate="about.title">why choose us?</h3>
+         <p data-translate="about.description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolorum quasi illo? Distinctio expedita commodi, nemo a quam error repellendus sint, fugiat quis numquam eum eveniet sequi aspernatur quaerat tenetur.</p>
+         <a href="courses.html" class="inline-btn" data-translate="about.courses">our courses</a>
+      </div>
+   </div>
+   <div class="box-container">
+      <div class="box">
+         <i class="fas fa-graduation-cap"></i>
+         <div>
+            <h3 data-translate="stats.courses">+10k</h3>
+            <p data-translate="stats.courses_text">online courses</p>
+         </div>
+      </div>
+      <div class="box">
+         <i class="fas fa-user-graduate"></i>
+         <div>
+            <h3 data-translate="stats.students">+40k</h3>
+            <p data-translate="stats.students_text">brilliant students</p>
+         </div>
+      </div>
+      <div class="box">
+         <i class="fas fa-chalkboard-user"></i>
+         <div>
+            <h3 data-translate="stats.tutors">+2k</h3>
+            <p data-translate="stats.tutors_text">expert tutors</p>
+         </div>
+      </div>
+      <div class="box">
+         <i class="fas fa-briefcase"></i>
+         <div>
+            <h3 data-translate="stats.placement">100%</h3>
+            <p data-translate="stats.placement_text">job placement</p>
+         </div>
+      </div>
+   </div>
+</section> 
+
+<section class="reviews">
+   <h1 class="heading" data-translate="reviews.heading">student's reviews</h1>
+   <div class="box-container">
+      <div class="box">
+         <p data-translate="reviews.review_1.text">This e-learning platform is absolutely fantastic! The courses are well-structured, and the instructors are incredibly knowledgeable. I love how user-friendly the interface is. Highly recommend it to anyone looking to learn something new!</p>
+         <div class="student">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3 data-translate="reviews.review_1.name">Usman Safder</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   &copy; <span data-translate="footer.copyright">copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</span>
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+</body>
+</html>
