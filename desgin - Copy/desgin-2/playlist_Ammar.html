@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title data-en="Video Playlist" data-ur="ویڈیو پلے لسٹ">Video Playlist</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo" data-en="E-Learning" data-ur="ای لرننگ">E-Learning</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-en-placeholder="search courses..." data-ur-placeholder="کورسز تلاش کریں...">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/dp.jpg" class="image" alt="">
+         <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+         <p class="role" data-en="Student" data-ur="طالب علم">Student</p>
+         <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn" data-en="Login" data-ur="لاگ ان">Login</a>
+            <a href="register.html" class="option-btn" data-en="Register" data-ur="رجسٹر">Register</a>
+         </div>
+      </div>
+
+   </section>
+   <section class="language-switch">
+      <button id="language-toggle" class="language-toggle" data-lang="en">Urdu</button>
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/dp.jpg" class="image" alt="">
+      <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+      <p class="role" data-en="Student" data-ur="طالب علم">Student</p>
+      <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span data-en="Home" data-ur="صفحہ اول">Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span data-en="About" data-ur="ہمارے بارے میں">About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span data-en="Courses" data-ur="کورسز">Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span data-en="Teachers" data-ur="اساتذہ">Teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</span></a>
+   </nav>
+
+</div>
+
+<section class="playlist-details">
+
+   <h1 class="heading" data-en="Playlist Details" data-ur="پلے لسٹ کی تفصیلات">Playlist Details</h1>
+
+   <div class="row">
+
+      <div class="column">
+         <form action="" method="post" class="save-playlist">
+            <button type="submit"><i class="far fa-bookmark"></i> <span data-en="Save Playlist" data-ur="پلے لسٹ محفوظ کریں">Save Playlist</span></button>
+         </form>
+   
+         <div class="thumb">
+            <img src="images/freelance.jpg" alt="">
+            <span data-en="10 Videos" data-ur="10 ویڈیوز">10 Videos</span>
+         </div>
+      </div>
+      <div class="column">
+         <div class="tutor">
+            <img src="images/ammar.png" alt="">
+            <div>
+               <h3 data-en="Ammar Khan" data-ur="عمار خان">Ammar Khan</h3>
+               <span data-en="21-10-2022" data-ur="21-10-2022">21-10-2022</span>
+            </div>
+         </div>
+   
+         <div class="details">
+            <h3 data-en="Freelancing Tutorial" data-ur="فری لانسنگ ٹیوٹوریل">Freelancing Tutorial</h3>
+            <p data-en="Learn the essentials of freelancing with our comprehensive tutorial. Discover how to find clients, manage projects, and build a successful freelance career. Equip yourself with the skills and strategies needed to thrive in the freelance world." data-ur="ہمارے جامع ٹیوٹوریل کے ساتھ فری لانسنگ کے بنیادی اصول سیکھیں۔ کلائنٹس کیسے تلاش کریں، پروجیکٹس کو مینیج کریں، اور کامیاب فری لانس کیریئر بنائیں۔ فری لانسنگ کی دنیا میں کامیاب ہونے کے لئے ضروری مہارتوں اور حکمت عملیوں سے خود کو لیس کریں۔">Learn the essentials of freelancing with our comprehensive tutorial. Discover how to find clients, manage projects, and build a successful freelance career. Equip yourself with the skills and strategies needed to thrive in the freelance world.</p>
+            <a href="teacher_profile_Ammar.html" class="inline-btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<section class="playlist-videos">
+
+   <h1 class="heading" data-en="Playlist Videos" data-ur="پلے لسٹ ویڈیوز">Playlist Videos</h1>
+
+   <div class="box-container">
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 01)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 01)">Freelancing Tutorial (Part 01)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 02)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 02)">Freelancing Tutorial (Part 02)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 03)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 03)">Freelancing Tutorial (Part 03)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 04)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 04)">Freelancing Tutorial (Part 04)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 05)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 05)">Freelancing Tutorial (Part 05)</h3>
+      </a>
+
+      <a class="box" href="watch-video.html">
+         <i class="fas fa-play"></i>
+         <img src="images/freelance.jpg" alt="">
+         <h3 data-en="Freelancing Tutorial (Part 06)" data-ur="فری لانسنگ ٹیوٹوریل (حصہ 06)">Freelancing Tutorial (```html
+(Part 06)</h3>
+      </a>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; <span data-en="Copyright" data-ur="جملہ حقوق محفوظ">Copyright</span> @ 2024 by <span data-en="Mr. Ammar Khan" data-ur="مسٹر عمار خان">Mr. Ammar Khan</span> | <span data-en="All rights reserved!" data-ur="تمام حقوق محفوظ ہیں!">All rights reserved!</span>
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

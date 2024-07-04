@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo" data-en="E-Learning" data-ur="ای لرننگ">E-Learning</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-en-placeholder="search courses..." data-ur-placeholder="کورسز تلاش کریں...">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/dp.jpg" class="image" alt="">
+         <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+         <p class="role" data-en="Student" data-ur="طالب علم">Student</p>
+         <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn" data-en="Login" data-ur="لاگ ان">Login</a>
+            <a href="register.html" class="option-btn" data-en="Register" data-ur="رجسٹر">Register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/dp.jpg" class="image" alt="">
+      <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+      <p class="role" data-en="Student" data-ur="طالب علم">Student</p>
+      <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span data-en="Home" data-ur="صفحہ اول">Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span data-en="About" data-ur="ہمارے بارے میں">About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span data-en="Courses" data-ur="کورسز">Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span data-en="Teachers" data-ur="اساتذہ">Teachers</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</span></a>
+   </nav>
+
+</div>
+
+<button id="language-toggle" class="language-toggle" data-lang="en">Urdu</button>
+
+<section class="contact">
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="">
+      </div>
+
+      <form action="" method="post">
+         <h3 data-en="Get in Touch" data-ur="رابطہ کریں">Get in Touch</h3>
+         <input type="text" placeholder="enter your name" name="name" required maxlength="50" class="box" data-en-placeholder="enter your name" data-ur-placeholder="اپنا نام درج کریں">
+         <input type="email" placeholder="enter your email" name="email" required maxlength="50" class="box" data-en-placeholder="enter your email" data-ur-placeholder="اپنا ای میل درج کریں">
+         <input type="number" placeholder="enter your number" name="number" required maxlength="50" class="box" data-en-placeholder="enter your number" data-ur-placeholder="اپنا نمبر درج کریں">
+         <textarea name="msg" class="box" placeholder="enter your message" required maxlength="1000" cols="30" rows="10" data-en-placeholder="enter your message" data-ur-placeholder="اپنا پیغام درج کریں"></textarea>
+         <input type="submit" value="send message" class="inline-btn" name="submit" data-en="send message" data-ur="پیغام بھیجیں">
+      </form>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3 data-en="Phone Number" data-ur="فون نمبر">Phone Number</h3>
+         <a href="tel:1234567890" data-en="123-456-7890" data-ur="۱۲۳-۴۵۶-۷۸۹۰">123-456-7890</a>
+         <a href="tel:1112223333" data-en="111-222-3333" data-ur="۱۱۱-۲۲۲-۳۳۳۳">111-222-3333</a>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3 data-en="Email Address" data-ur="ای میل پتہ">Email Address</h3>
+         <a href="mailto:shaikhanas@gmail.com" data-en="designer@gmail.com" data-ur="ڈیزائنر@gmail.com">designer@gmail.com</a>
+         <a href="mailto:anasbhai@gmail.com" data-en="ammar@namal.edu.pk" data-ur="عمار@نمل.edu.pk">ammar@namal.edu.pk</a>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3 data-en="Office Address" data-ur="دفتر کا پتہ">Office Address</h3>
+         <a href="#" data-en="Namal University, 30-km Talagang Road, Mianwali, Pakistan" data-ur="نمل یونیورسٹی، ۳۰-کلومیٹر تلہ گنگ روڈ، میانوالی، پاکستان">Namal University, 30-km Talagang Road, Mianwali, Pakistan</a>
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; <span data-en="copyright @ 2024 by Mr. Ammar Khan" data-ur="جملہ حقوق محفوظ ہیں @ ۲۰۲۴ از مسٹر عمار خان">copyright @ 2024 by Mr. Ammar Khan</span> | <span data-en="all rights reserved!" data-ur="تمام حقوق محفوظ ہیں!">all rights reserved!</span>
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
