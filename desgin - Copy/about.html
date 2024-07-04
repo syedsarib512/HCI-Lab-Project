@@ -7,38 +7,94 @@
    <title data-translate="title">about us</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
+
+   <style>
+      /* Additional CSS for mode dropdown */
+      .mode-selector {
+         position: relative;
+         display: inline-block;
+         margin-left: 10px;
+      }
+
+      .mode-dropdown {
+         display: none;
+         position: absolute;
+         right: 0;
+         background-color: #101042;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+      }
+
+      .mode-dropdown a {
+         color: rgb(33, 29, 29);
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+
+      .mode-dropdown a:hover {
+         background-color: #411fbc;
+      }
+
+      .mode-selector:hover .mode-dropdown {
+         display: block;
+      }
+
+      .icons {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         flex-grow: 1;
+      }
+
+      .header .profile {
+         position: absolute;
+         right: 10px;
+         top: 50%;
+         transform: translateY(-50%);
+      }
+   </style>
 </head>
 <body>
 
-<header class="header">
-   <section class="flex">
-      <a href="home.html" class="logo" data-translate="header.logo">Educa.</a>
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-translate="header.search_placeholder">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
-      </div>
-      <div class="profile">
-         <img src="images/dp.jpg" class="image" alt="">
-         <h3 class="name" data-translate="profile.name">Syed Sarib</h3>
-         <p class="role" data-translate="profile.role">student</p>
-         <a href="profile.html" class="btn" data-translate="profile.view_profile">view profile</a>
-         <div class="flex-btn">
-            <a href="login.html" class="option-btn" data-translate="profile.login">login</a>
-            <a href="register.html" class="option-btn" data-translate="profile.register">register</a>
+   <header class="header">
+      <section class="flex">
+         <a href="home.html" class="logo">Educa.</a>
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+            <div class="mode-selector">
+               <i class="fas fa-adjust"></i>
+               <div class="mode-dropdown">
+                  <a href="#" onclick="applyTheme('default')">Default</a>
+                  <a href="#" onclick="applyTheme('happiness')">Happiness</a>
+                  <a href="#" onclick="applyTheme('sadness')">Sadness</a>
+                  <a href="#" onclick="applyTheme('anger')">Anger</a>
+                  <a href="#" onclick="applyTheme('surprise')">Surprise</a>
+                  <a href="#" onclick="applyTheme('fear')">Fear</a>
+                  <a href="#" onclick="applyTheme('disgust')">Disgust</a>
+               </div>
+            </div>
          </div>
-      </div>
-   </section>
-   <section class="language-switch">
-      <button id="language-en" class="lang-btn">EN</button>
-      <button id="language-ur" class="lang-btn">UR</button>
-   </section>
-</header> 
+         <div class="profile">
+            <img src="images/dp.jpg" class="image" alt="">
+            <h3 class="name">Syed Sarib</h3>
+            <p class="role">student</p>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">login</a>
+               <a href="register.html" class="option-btn">register</a>
+            </div>
+         </div>
+      </section>
+   </header>
 
 <div class="side-bar">
    <div id="close-btn">
@@ -122,6 +178,66 @@
       </div>
    </div>
 </section>
+
+
+<section class="quotes" id="quotes-section">
+   <h2>Quote of the Day</h2>
+   <blockquote id="quote-text">
+      Select a mode to see a relevant quote.
+   </blockquote>
+</section>
+
+<script>
+   function applyTheme(mode) {
+      const root = document.documentElement;
+      const quoteText = document.getElementById('quote-text');
+
+      if (mode === 'default') {
+         root.style.setProperty('--background-color', '#ffffff');
+         root.style.setProperty('--text-color', '#000000');
+         root.style.setProperty('--button-color', '#007bff');
+         root.style.setProperty('--highlight-color', '#f0f0f0');
+         quoteText.innerHTML = 'Select a mode to see a relevant quote.';
+      } else if (mode === 'happiness') {
+         root.style.setProperty('--background-color', '#fffacd');
+         root.style.setProperty('--text-color', '#228b22');
+         root.style.setProperty('--button-color', '#ffa500');
+         root.style.setProperty('--highlight-color', '#add8e6');
+         quoteText.innerHTML = '“Happiness is not something ready-made. It comes from your own actions.” – Dalai Lama';
+      } else if (mode === 'sadness') {
+         root.style.setProperty('--background-color', '#add8e6');
+         root.style.setProperty('--text-color', '#2f4f4f');
+         root.style.setProperty('--button-color', '#ffb6c1');
+         root.style.setProperty('--highlight-color', '#dda0dd');
+         quoteText.innerHTML = '“The word ‘happy’ would lose its meaning if it were not balanced by sadness.” – Carl Jung';
+      } else if (mode === 'anger') {
+         root.style.setProperty('--background-color', '#f8f8f8');
+         root.style.setProperty('--text-color', '#000080');
+         root.style.setProperty('--button-color', '#4caf50');
+         root.style.setProperty('--highlight-color', '#d3d3d3');
+         quoteText.innerHTML = '“For every minute you are angry you lose sixty seconds of happiness.” – Ralph Waldo Emerson';
+      } else if (mode === 'surprise') {
+         root.style.setProperty('--background-color', '#e0ffff');
+         root.style.setProperty('--text-color', '#ff4500');
+         root.style.setProperty('--button-color', '#ffd700');
+         root.style.setProperty('--highlight-color', '#ffffff');
+         quoteText.innerHTML = '“Surprise is the greatest gift which life can grant us.” – Boris Pasternak';
+      } else if (mode === 'fear') {
+         root.style.setProperty('--background-color', '#ffe4e1');
+         root.style.setProperty('--text-color', '#2e8b57');
+         root.style.setProperty('--button-color', '#ff69b4');
+         root.style.setProperty('--highlight-color', '#ffebcd');
+         quoteText.innerHTML = '“The only thing we have to fear is fear itself.” – Franklin D. Roosevelt';
+      } else if (mode === 'disgust') {
+         root.style.setProperty('--background-color', '#f0e68c');
+         root.style.setProperty('--text-color', '#808000');
+         root.style.setProperty('--button-color', '#556b2f');
+         root.style.setProperty('--highlight-color', '#f5f5dc');
+         quoteText.innerHTML = '“Disgust is often more deeply felt than anger and in the long run has more consequences.” – Arthur Schopenhauer';
+      }
+   }
+</script>
+
 
 <footer class="footer">
    &copy; <span data-translate="footer.copyright">copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!</span>
