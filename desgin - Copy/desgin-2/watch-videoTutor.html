@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title data-en="Home" data-ur="صفحہ اول">Home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="homeTutor.html" class="logo" data-en="E-Learning" data-ur="ای لرننگ">E-Learning</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-en-placeholder="search courses..." data-ur-placeholder="کورسز تلاش کریں...">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/ammar.png" class="image" alt="">
+         <h3 class="name" data-en="Ammar Ahmad" data-ur="عمار خان">Ammmar Ahmad</h3>
+         <p class="role" data-en="Tutor" data-ur="استاد">Tutor</p>
+         <a href="homeTutor.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn" data-en="Login" data-ur="لاگ ان">Login</a>
+            <a href="register.html" class="option-btn" data-en="Register" data-ur="رجسٹر">Register</a>
+         </div>
+      </div>
+
+   </section>
+
+   <section class="language-switch">
+      <button id="language-toggle" class="language-toggle" data-lang="en">Urdu</button>
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/ammar.png" class="image" alt="">
+      <h3 class="name" data-en="Ammar Ahmad" data-ur="عمار خان">Ammar Ahmad</h3>
+      <p class="role" data-en="Tutor" data-ur="استاد">Tutor</p>
+      <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="homeTutor.html"><i class="fas fa-home"></i><span data-en="Home" data-ur="صفحہ اول">Home</span></a>
+      <a href="aboutTutor.html"><i class="fas fa-question"></i><span data-en="About" data-ur="ہمارے بارے میں">About</span></a>
+      <a href="coursesTutor.html"><i class="fas fa-graduation-cap"></i><span data-en="Courses" data-ur="کورسز">Courses</span></a>
+      <!-- <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span data-en="Teachers" data-ur="اساتذہ">Teachers</span></a> -->
+      <a href="contactTutor.html"><i class="fas fa-headset"></i><span data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</span></a>
+   </nav>
+
+</div>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div>
+      <h3 class="title" data-en="complete HTML tutorial (part 01)" data-ur="مکمل ایچ ٹی ایم ایل ٹیوٹوریل (حصہ 01)">complete HTML tutorial (part 01)</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+         <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/ammar.png" alt="">
+         <div>
+            <h3 data-en="Ammar Ahmad" data-ur="عمار خان">Ali Raza</h3>
+            <span data-en="Tutor" data-ur="استاد">Tutor</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="playlist_AmmarTutor.html" class="inline-btn" data-en="view playlist" data-ur="پلے لسٹ دیکھیں">view playlist</a>
+         <button><i class="far fa-heart"></i><span data-en="like" data-ur="پسند">like</span></button>
+      </form>
+      <p class="description">
+         Explore a wide range of practical tips and techniques in our comprehensive tutorial video. Whether you're a beginner or looking to refine your skills, this video covers essential strategies to enhance your proficiency in using various software tools effectively.
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading" data-en="5 comments" data-ur="5 تبصرے">5 comments</h1>
+
+   <form action="" class="add-comment">
+      <h3 data-en="add comments" data-ur="تبصرے شامل کریں">add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10" data-en-placeholder="enter your comment" data-ur-placeholder="اپنا تبصرہ درج کریں"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment" data-en="add comment" data-ur="تبصرہ شامل کریں">
+   </form>
+
+   <h1 class="heading" data-en="user comments" data-ur="صارفین کے تبصرے">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-1.jpg" alt="">
+            <div>
+               <h3 data-en="Ali Raza" data-ur="علی رضا">Syed Sarib</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="this is a comment form Ali Raza" data-ur="علی رضا کا تبصرہ فارم ہے">this is a comment form Syed Sarib</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn" data-en="edit comment" data-ur="تبدیلی کا تبصرہ">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn" data-en="delete comment" data-ur="تبصرہ حذف کریں">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3 data-en="M Faisal" data-ur="ایم فیصل">M Faisal</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="awesome tutorial!
+            keep going!" data-ur="شاندار ٹیوٹوریل! جاری رہو!">awesome tutorial!
+            keepgoing!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3 data-en="Salman Iqbal" data-ur="سلمان اقبال">Salman Iqbal</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="amazing way of teaching!
+            thank you so much!" data-ur="تعلیم کا حیرت انگیز طریقہ!
+            بہت شکریہ!">amazing way of teaching!
+            thank you so much!
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/ammar.png" alt="">
+            <div>
+               <h3 data-en="Ammar Khan" data-ur="عمار خان">Ammar Khan</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="loved it, thanks for the tutorial!" data-ur="اسے پسند آیا، ٹیوٹوریل کے لیے شکریہ!">loved it, thanks for the tutorial!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/khawar" alt="">
+            <div>
+               <h3 data-en="khawar Khurshid" data-ur="خوار خورشید">khawar Khurshid</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="this is what I have been looking for! thank you so much!" data-ur="یہ وہ ہے جسے میں تلاش کر رہا تھا! بہت شکریہ!">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <img src="images/sonia.png" alt="">
+            <div>
+               <h3 data-en="Sonia Safeer" data-ur="سونیا سفیر">Sonia Safeer</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box" data-en="thanks for the tutorial!
+            how to download source code file?" data-ur="ٹیوٹوریل کے لیے شکریہ!
+            سورس کوڈ فائل ڈاؤن لوڈ کیسے کریں؟">thanks for the tutorial!
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; <span data-en="copyright" data-ur="کاپی رائٹ">copyright</span> @ 2022 by <span data-en="mr. web designer" data-ur="مسٹر ویب ڈیزائنر">mr. web designer</span> | <span data-en="all rights reserved!" data-ur="سبھی حقوق محفوظ ہیں!">all rights reserved!</span>
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>

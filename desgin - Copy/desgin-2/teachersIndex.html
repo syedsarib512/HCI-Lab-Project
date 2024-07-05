@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title data-en="teachers" data-ur="اساتذہ">teachers</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<header class="header">
+   <section class="flex">
+      <a href="index.html" class="logo" data-en="E-Learning" data-ur="ای لرننگ">E-Learning</a>
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" data-en-placeholder="search courses..." data-ur-placeholder="کورسز تلاش کریں...">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+      
+      <div class="profile">
+         <!-- <img src="images/dp.jpg" class="image" alt=""> -->
+         <!-- <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+         <p class="role" data-en="Student" data-ur="طالب علم">Student</p> -->
+         <!-- <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a> -->
+         <div class="flex-btn">
+            <a href="loginindex.html" class="option-btn" data-en="Login" data-ur="لاگ ان">Login</a>
+            <a href="register.html" class="option-btn" data-en="Register" data-ur="رجسٹر">Register</a>
+         </div>
+      </div>
+   </section>
+   <section class="language-switch">
+      <button id="language-toggle" class="language-toggle" data-lang="en">Urdu</button>
+   </section>
+</header> 
+
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <!-- <div class="profile">
+      <img src="images/dp.jpg" class="image" alt="">
+      <h3 class="name" data-en="Syed Sarib" data-ur="سید صارِب">Syed Sarib</h3>
+      <p class="role" data-en="Student" data-ur="طالب علم">Student</p>
+      <a href="profile.html" class="btn" data-en="View Profile" data-ur="پروفائل دیکھیں">View Profile</a>
+   </div> -->
+   <nav class="navbar">
+      <a href="homeIndex.html"><i class="fas fa-home"></i><span data-en="Home" data-ur="صفحہ اول">Home</span></a>
+      <a href="aboutIndex.html"><i class="fas fa-question"></i><span data-en="About" data-ur="ہمارے بارے میں">About</span></a>
+      <a href="coursesIndex.html"><i class="fas fa-graduation-cap"></i><span data-en="Courses" data-ur="کورسز">Courses</span></a>
+      <a href="teachersIndex.html"><i class="fas fa-chalkboard-user"></i><span data-en="Teachers" data-ur="اساتذہ">Teachers</span></a>
+      <a href="contactIndex.html"><i class="fas fa-headset"></i><span data-en="Contact Us" data-ur="ہم سے رابطہ کریں">Contact Us</span></a>
+   </nav>
+</div>
+
+<section class="teachers">
+
+   <h1 class="heading" data-en="expert teachers" data-ur="ماہر اساتذہ">expert teachers</h1>
+
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="search tutors..." required maxlength="100" data-en-placeholder="search tutors..." data-ur-placeholder="استاد تلاش کریں...">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
+
+   <div class="box-container">
+
+      <div class="box offer">
+         <h3 data-en="become a tutor" data-ur="استاد بنیں">become a tutor</h3>
+         <p data-en="Inspire and educate students around the globe by joining our team of dedicated educators. Share your expertise and make a lasting impact on the future." data-ur="تمام دنیا کے طلباء کو متاثر کریں اور اپنے مخصوص معلموں کے ٹیم میں شامل ہوں۔ اپنی مہارت شیئر کریں اور مستقبل پر مستقل اثر ڈالیں۔">Inspire and educate students around the globe by joining our team of dedicated educators. Share your expertise and make a lasting impact on the future.</p>
+         <a href="register.html" class="inline-btn" data-en="get started" data-ur="شروع کریں">get started</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/khawar" alt="" data-en="Khawar Khurshid" data-ur="خوار خورشید">
+            <div>
+               <h3 data-en="Khawar Khurshid" data-ur="خوار خورشید">Khawar Khurshid</h3>
+               <span data-en="Professor" data-ur="پروفیسر">Professor</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 767" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_khawar.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Arshad.png" alt="" data-en="Arshad Farhad" data-ur="ارشد فرہاد">
+            <div>
+               <h3 data-en="Arshad Farhad" data-ur="ارشد فرہاد">Arshad Farhad</h3>
+               <span data-en="Assistant Professor" data-ur="ایسوسی ایٹ پروفیسر">Assistant Professor</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_copy_Arshad.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/Ali.png" alt="" data-en="Ali Shahid" data-ur="علی شاہد">
+            <div>
+               <h3 data-en="Ali Shahid" data-ur="علی شاہد">Ali Shahid</h3>
+               <span data-en="Associate Professor" data-ur="ایسوسی ایٹ پروفیسر">Associate Professor</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_Ali.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/ammar.png" alt="" data-en="Ammar Khan" data-ur="عمار خان">
+            <div>
+               <h3 data-en="Ammar Khan" data-ur="عمار خان">Ammar Khan</h3>
+               <span data-en="Lab Engineer" data-ur="لیب انجینئر">Lab Engineer</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_Ammar.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/sonia.png" alt="" data-en="Sonia Safeer" data-ur="سونیا سفیر">
+            <div>
+               <h3 data-en="Sonia Safeer" data-ur="سونیا سفیر">Sonia Safeer</h3>
+               <span data-en="Lecturer" data-ur="لیکچرر">Lecturer</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_Sonia.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/shehzad.png" alt="" data-en="Shehzad Arif" data-ur="شہزاد عارف">
+            <div>
+               <h3 data-en="Shehzad Arif" data-ur="شہزاد عارف">Shehzad Arif</h3>
+               <span data-en="Lecturer" data-ur="لیکچرر">Lecturer</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_shehzad.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/bilal.png" alt="" data-en="Bilal Haidral" data-ur="بلال حیدرل">
+            <div>
+               <h3 data-en="Bilal Haidral" data-ur="بلال حیدرل">Bilal Haidral</h3>
+               <span data-en="Lecturer" data-ur="لیکچرر">Lecturer</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_bilal.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/rafay.png" alt="" data-en="Abdul Rafay" data-ur="عبدالرفیع">
+            <div>
+               <h3 data-en="Abdul Rafay" data-ur="عبدالرفیع">Abdul Rafay</h3>
+               <span data-en="Lecturer" data-ur="لیکچرر">Lecturer</span>
+            </div>
+         </div>
+         <p data-en="total playlists: 15" data-ur="کل پلے لسٹس : "><span>4</span></p>
+         <p data-en="total videos: 75" data-ur="کل ویڈیوز : "><span>18</span></p>
+         <p data-en="total likes: 567" data-ur="کل لائکس : "><span>1208</span></p>
+         <a href="teacher_profile_rafay.html" class="inline-btn" data-en="view profile" data-ur="پروفائل دیکھیں">view profile</a>
+      </div>
+
+   </div>
+
+</section>
+
+<footer class="footer">
+
+   &copy; <span data-en="copyright" data-ur="کاپی رائٹ">copyright</span> @ 2024 by <span data-en="Mr. Ammar Khan" data-ur="مسٹر عمار خان">Mr. Ammar Khan</span> | <span data-en="all rights reserved!" data-ur="سبھی حقوق محفوظ ہیں!">all rights reserved!</span>
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+   
+</body>
+</html>
